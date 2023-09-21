@@ -34,18 +34,18 @@ const team = [
   }
 ];
 
-const ul = document.querySelector('ul');
+const stamp = document.querySelector('div.row');
 
 // for(let i = 0; i < team.length; i++){
 //   const card = team[i];
  
 // }
 
+// - stampare nel DOM.
+
 for (let card of team) {
 console.log(card);
-ul.insertAdjacentHTML('beforeend', `<li>Nome: ${card.nome} - Titolo: ${card.title} <br><img src="${card.image}" alt="${card.nome}"></li>`);
+stamp.insertAdjacentHTML('beforeend', `<div class="col-3 card"><h1>Nome: ${card.nome}</h1><h2>Titolo: ${card.title}</h2> <br><img src="${card.image}" alt="${card.nome}"></div>`);
 }
 // document.getElementById('output').innerHTML = team;
-// - creare un ciclo per avere i valari dei nomi, ruoli e foto.
-// - stampare in console
-// - stampare nel DOM.
+
